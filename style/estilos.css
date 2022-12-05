@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Roboto:ital,wght@1,100&display=swap');
+
+*{padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sisi{
+        background-image: url(../img/nordelta.jpg);
+    }
+
+.envoltura{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+header{
+    margin-top: 10px;
+    font-family:'Oswald', sans-serif;
+    display: grid;
+    font-size: large;
+}
+
+nav{
+    display: flex;
+    word-spacing: 10px;
+    flex-direction: column;
+    color: black;
+    align-items: stretch;
+}
+
+.borde{
+    background-color: cornflowerblue;
+    border: 20px solid cornflowerblue;
+}
+nav ul li{
+    list-style-type: none;
+    font-size: small;
+    margin-right: 20px;
+}
+
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: rgb(54, 50, 50);
+}
+
+.logo{
+margin-top: 20px;
+height: 20px;
+}
+
+aside{
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: bold;
+    color: brown;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.coral1, .hulk1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+section div{
+    width: 100%;
+    background-color: aliceblue;
+    padding: 15px;
+    margin: 2px;
+    color: brown;
+    font-family: 'Oswald', sans-serif;
+}
+.uno, .dos, .hulk1, .coral1, h3{
+    text-align: center;
+    font-size: small;
+    margin: 20px 10px 10px 20px;
+    font-weight: bold;
+}
+.hulk1, .coral1, .uno, .dos{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.nuevosproyectos, .confianos, .años{
+    margin-top: 15px;
+    font-weight: bold;
+    font-family:'Lato', sans-serif;
+    text-align: center;
+    margin-left: 15px;
+    font-size: medium;
+}
+
+.flex_container{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items:normal;
+    margin-top: 30px;
+    background-color: whitesmoke;
+}
+
+footer{
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.redes{
+    margin-top: 30px;
+}
+
+.logo{
+    height: 20px;
+}
+
+.ofi, .ofi2{
+    margin-top: 20px;
+    height: 500px;
+    margin: 30px 20px 20px 20px;
+}
+
+
+.container-fluid{
+    margin: 70px 20px 20px 20px;
+    text-align: center;
+    font-weight: bold;
+    align-items: flex-start;
+}
+
+
+.llame{
+    line-height: 40px;
+    font: size 10px;
+    margin-top: 50px;
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: aside;
+}
+.section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+.galeriahulk{
+    grid-area: galeria;
+}
+
+.envoltura{
+    justify-content: center;
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "aside"
+    "flex_container"
+    "galeriahulk"
+    "footer";
+    gap: 20px;
+}
+
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6 {
+    margin-top: 20px;
+    border: 10px;
+    width: 30px;
+}
+
+@media(min-width:768px){
+    a{
+        font-size: medium;
+    }
+
+    .flex_container{
+        background-color: whitesmoke;
+        display:flex;
+        flex-direction: row;
+        font-size: medium;
+        font-weight: normal;
+        text-transform: uppercase;
+        justify-content: center;
+        margin: 30px 30px 30px 30px;
+        border:5px solid whitesmoke;
+    }
+    div .redes{
+        margin-top: 100px;
+    }
+    
+    .buscar{
+        background-color: brown;
+        color: whitesmoke;
+    }
+}
+
+@media(min-width:1024px){
+    .envoltura{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-between;
+        justify-items: start;
+        align-items: start;
+        margin: 0;
+        padding: 0;
+        grid-template-areas: 
+        "header         nav"
+        "aside           aside"
+        "flex_container  flex_container"
+        "footer        footer";
+        grid-template-rows:1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 
+    }
+    
+.logo{
+        height: 30px;
+        align-items: start;
+        margin-left: 30px;
+    }
+
+.redes{
+        margin-top: 35px;
+}
+
+aside{
+    color: brown;
+}
+
+a{
+    font-size: medium;
+    word-spacing:0px;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+}
+
+.justifyend{
+    justify-self: center;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.flex_container{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    font-size: small;
+    margin-right: 20px;
+}
+.hulk1, .coral1,{
+    margin-top: 50px;
+}
+.galeriacoral, .galeriahulk{
+    margin-top: 20px;
+}
+.confianos{
+    font-size: medium;
+}
+
+}
